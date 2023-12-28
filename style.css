@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .main{
+    height: 75.5vh;
+} */
+
+.title{
+    background-color: black;
+    color:white;
+    padding:15px;
+    text-align: center;
+}
+
+.choices{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.choice{
+    text-align: center;
+    width:150px;
+    height: 150px;
+}
+.choice img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 5px solid transparent;
+}
+
+.choice img:hover{
+    border: 5px solid black;
+    cursor: pointer;
+}
+.scoreboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.score{
+    text-align: center;
+    margin-top: 30px;
+    padding:30px
+}
+.points{
+    font-size: 30px;
+}
+
+.comment{
+    background-color: black;
+    color: white;
+    width: 500px;
+    text-align: center;
+    margin: 10px auto 50px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.footer{
+    text-align: center;
+}
+
+@media only screen and (max-width:500px){
+    .comment{
+        width: 300px;
+    }
+    .choices{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .choice{
+        width:150px;
+        height: 150px;
+        margin-bottom: 40px;
+    }
+    .score{
+        margin-top: -60px;
+    }
+}
