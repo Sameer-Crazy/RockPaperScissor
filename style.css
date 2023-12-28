@@ -72,20 +72,23 @@ body{
     text-align: center;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:400px){
+    .title{
+        font-size: 14px;
+    }
     .comment{
         width: 300px;
     }
     .choices{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 30px;
     }
     .choice{
-        width:150px;
-        height: 150px;
+        width:120px;
+        height: 120px;
         margin-bottom: 40px;
     }
     .score{
